@@ -21,7 +21,8 @@ public class CourseMaterial {
 
     @OneToOne(
             cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY
+            fetch = FetchType.LAZY, //helps in fetching data of one table only
+            optional = false       //making it mandatory to add values for this table elements also.
     )
     @JoinColumn(
             name = "course_id",

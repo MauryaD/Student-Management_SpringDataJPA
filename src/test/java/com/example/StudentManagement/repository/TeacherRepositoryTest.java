@@ -29,7 +29,8 @@ class TeacherRepositoryTest {
         Teacher teacher = Teacher.builder()
                 .firstName("Brahma")
                 .lastName("Aarav")
-                .courses(List.of(courseSpringBoot, courseJava)).build();
+                //.courses(List.of(courseSpringBoot, courseJava))
+                .build();
 
         teacherRepository.save(teacher);
     }
